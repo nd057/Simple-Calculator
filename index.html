@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="animate.css">
+
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="calculator.css">
+    <title> ND Calculator </title>
+</head>
+
+<body onclick="fontCheck()">
+    <div class="container animate__bounceIn ">
+        <h1>CALCULATOR</h1>
+        <div class="result">
+
+        </div>
+        <div class="input">
+            0
+        </div>
+        <div class="calculator">
+            <div class="rows">
+                <div id="ce" class="fce columns symbol red "  onclick="fclick('#ce')">CE</div>
+                <div id="divide" class="fdivide columns symbol" onclick=" fclick( '#divide' )">&divide;</div>
+                <div id="square" class="fsquare columns symbol " onclick=" fclick( '#square' )">x<sup>2</sup></div>
+                <div id="back" class="fback columns symbol red "  onclick="fclick('#back')"><i class="fas fa-backspace"></i></div>
+            </div>
+                <div class="rows">
+                    <div id="mod" class=" fmod columns symbol " onclick=" fclick( '#mod' )">%</div>
+                    <div id="sqrt" class="fsqrt columns symbol"  onclick="fclick('#sqrt')" >&Sqrt;</div>
+                    <div id="oneDivide" class=" foneDivide columns symbol"  onclick="fclick('#oneDivide')" > <sup>1</sup>/ <sub>x</sub> </div>
+                    <div id="log" class="flog columns symbol "  onclick="fclick('#log')">log</div>
+                </div>
+                <div class="rows">
+                    <div id="seven" class="columns" onclick="fclick( '#seven' )">7</div>
+                    <div id="eight" class="columns" onclick="fclick( '#eight' )">8</div>
+                    <div id="nine" class="columns" onclick="fclick( '#nine' )">9</div>
+                    <div id="multiply" class="fmultiply columns symbol" onclick=" fclick( '#multiply' )">X</div>
+                </div>
+                <div class="rows">
+                    <div id="four" class="columns  f" onclick="fclick( '#four' )">4</div>
+                    <div id="five" class="columns" onclick="fclick( '#five' )">5</div>
+                    <div id="six" class="columns"onclick="fclick( '#six' )">6</div>
+                    <div id="minus" class="fminus columns symbol" onclick=" fclick( '#minus' )">-</div>
+                </div>
+                <div class="rows">
+                    <div id="one" class="columns" onclick="fclick( '#one' )">1</div>
+                    <div id="two" class="columns" onclick="fclick( '#two' )">2</div>
+                    <div id="three" class="columns" onclick="fclick( '#three' )">3</div>
+                    <div id="plus" class="fplus columns symbol" onclick=" fclick( '#plus' )">+</div>
+                </div>
+                <div class="rows">
+                    <div id="sign" class=" fsign columns"  onclick="fclick('#sign')">+/-</div>
+                    <div id="zero" class="columns" onclick="fclick( '#zero' )">0</div>
+                    <div id="dot" class="fdot columns"  onclick="fclick('#dot')">.</div>
+                    <div id="equal" class=" fequal columns symbol" onclick="fclick('#equal')">=</div>
+                </div>
+            </div>
+        </div>
+
+        <script src="calculator.js"></script>
+</body>
+
+</html>
